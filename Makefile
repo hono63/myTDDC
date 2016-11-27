@@ -38,7 +38,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 
 
 TEST_SRCS = $(TEST_DIR)/sample1_unittest.cc
-TEST_TARGET = $(BIN_DIR)/sample1_unittest
+TEST_TARGET = $(BIN_DIR)/sample1_unittest.out
 TEST_OBJS  = $(addprefix $(OBJ_DIR)/, $(notdir $(TEST_SRCS:.cc=.o)))
 	LIBS += -L$(LIB_DIR)
 	LIBS += -lsample1
